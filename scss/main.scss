@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #303030, #f00);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  background: rgb(3, 3, 73);
+  padding: 0.5vh;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  gap: 0.5vh;
+
+  & > div {
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background-color: rgba(182, 166, 166, 0.2);
+    border-radius: 0.3vh;
+  }
+
+  & .O {
+    background-color: rgb(176, 13, 182);
+  }
+
+  & .J {
+    background-color: rgb(13, 148, 182);
+  }
+  & .L {
+    background-color: rgb(13, 182, 64);
+  }
+
+  & .S {
+    background-color: rgb(148, 206, 41);
+  }
+  & .F {
+    background-color: rgb(214, 135, 16);
+  }
+
+  & .I {
+    background-color: rgb(215, 230, 6);
+  }
+  & .T {
+    background-color: rgb(13, 129, 182);
+  }
+
+  & .X {
+    background-color: rgb(182, 13, 50);
+  }
+}
